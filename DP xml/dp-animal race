@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<pattern name="Factory Method">
+		<instance>
+			<role name="Creator" element="AbstractFactory" />
+			<role name="FactoryMethod()" element="AbstractFactory::getFarm(java.lang.String):IFarm" />
+			<role name="FactoryMethod()" element="AbstractFactory::getRacer(java.lang.String):IRacer" />
+		</instance>
+	</pattern>
+	<pattern name="Prototype" />
+	<pattern name="Singleton">
+		<instance>
+			<role name="Singleton" element="FarmFactory" />
+			<role name="uniqueInstance" element="FarmFactory::farmFactory:FarmFactory" />
+		</instance>
+		<instance>
+			<role name="Singleton" element="RacerFactory" />
+			<role name="uniqueInstance" element="RacerFactory::racerFactory:RacerFactory" />
+		</instance>
+	</pattern>
+	<pattern name="(Object)Adapter">
+		<instance>
+			<role name="Adaptee" element="Cat" />
+			<role name="Adapter" element="HumanSocietyCenter" />
+			<role name="adaptee" element="HumanSocietyCenter::cat:Cat" />
+			<role name="Request()" element="HumanSocietyCenter::displayAnimals():void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="Chicken" />
+			<role name="Adapter" element="HumanSocietyCenter" />
+			<role name="adaptee" element="HumanSocietyCenter::chick:Chicken" />
+			<role name="Request()" element="HumanSocietyCenter::displayAnimals():void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="Dalmatian" />
+			<role name="Adapter" element="HumanSocietyCenter" />
+			<role name="adaptee" element="HumanSocietyCenter::dal:Dalmatian" />
+			<role name="Request()" element="HumanSocietyCenter::displayAnimals():void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="Dog" />
+			<role name="Adapter" element="HumanSocietyCenter" />
+			<role name="adaptee" element="HumanSocietyCenter::dog:Dog" />
+			<role name="Request()" element="HumanSocietyCenter::displayAnimals():void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="Poodle" />
+			<role name="Adapter" element="HumanSocietyCenter" />
+			<role name="adaptee" element="HumanSocietyCenter::poodle:Poodle" />
+			<role name="Request()" element="HumanSocietyCenter::displayAnimals():void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="Sparrow" />
+			<role name="Adapter" element="HumanSocietyCenter" />
+			<role name="adaptee" element="HumanSocietyCenter::sparrow:Sparrow" />
+			<role name="Request()" element="HumanSocietyCenter::displayAnimals():void" />
+		</instance>
+	</pattern>
+	<pattern name="Command" />
+	<pattern name="Composite" />
+	<pattern name="Decorator" />
+	<pattern name="Observer" />
+	<pattern name="State">
+		<instance>
+			<role name="Context" element="Context" />
+			<role name="State" element="IRacer" />
+			<role name="state" element="Context::racer:IRacer" />
+			<role name="Request()" element="Context::executeStrategy():void" />
+		</instance>
+	</pattern>
+	<pattern name="Strategy" />
+	<pattern name="Bridge" />
+	<pattern name="Template Method" />
+	<pattern name="Visitor" />
+	<pattern name="Proxy" />
+	<pattern name="Proxy2" />
+	<pattern name="Chain of Responsibility" />
+</system>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<pattern name="Factory Method">
+		<instance>
+			<role name="Creator" element="com.sidlors.abstracfactory.FabricaAbstracta" />
+			<role name="FactoryMethod()" element="com.sidlors.abstracfactory.FabricaAbstracta::creaConexion(java.lang.String):com.sidlors.abstracfactory.Conexion" />
+		</instance>
+	</pattern>
+	<pattern name="Prototype" />
+	<pattern name="Singleton">
+		<instance>
+			<role name="Singleton" element="com.sidlors.singleton.Marciano" />
+			<role name="uniqueInstance" element="com.sidlors.singleton.Marciano::marcianos:com.sidlors.singleton.Marciano" />
+		</instance>
+	</pattern>
+	<pattern name="(Object)Adapter" />
+	<pattern name="Command" />
+	<pattern name="Composite" />
+	<pattern name="Decorator" />
+	<pattern name="Observer" />
+	<pattern name="State" />
+	<pattern name="Strategy" />
+	<pattern name="Bridge" />
+	<pattern name="Template Method" />
+	<pattern name="Visitor" />
+	<pattern name="Proxy" />
+	<pattern name="Proxy2" />
+	<pattern name="Chain of Responsibility" />
+</system>
+
